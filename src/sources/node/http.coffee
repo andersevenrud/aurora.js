@@ -4,6 +4,7 @@ http = require 'http'
 
 class HTTPSource extends EventEmitter
     constructor: (@url) ->
+        super()
         @request = null
         @response = null
         

@@ -9,6 +9,7 @@ class MozillaAudioDevice extends EventEmitter
     @supported: Audio? and 'mozWriteAudio' of new Audio
     
     constructor: (@sampleRate, @channels) ->        
+        super()
         @audio = new Audio
         @audio.mozSetup(@channels, @sampleRate)
         

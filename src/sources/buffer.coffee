@@ -4,6 +4,7 @@ AVBuffer = require '../core/buffer'
 
 class BufferSource extends EventEmitter    
     constructor: (input) ->
+        super()
         # Now make an AV.BufferList
         if input instanceof BufferList
             @list = input

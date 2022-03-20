@@ -7,6 +7,7 @@ class Demuxer extends EventEmitter
         return false
     
     constructor: (source, chunk) ->
+        super()
         list = new BufferList
         list.append chunk
         @stream = new Stream(list)

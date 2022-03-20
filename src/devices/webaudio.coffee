@@ -16,6 +16,7 @@ class WebAudioDevice extends EventEmitter
     sharedContext = null
     
     constructor: (@sampleRate, @channels) ->
+        super()
         @context = sharedContext ?= new AudioContext
         @deviceSampleRate = @context.sampleRate
         

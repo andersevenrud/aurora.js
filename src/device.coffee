@@ -8,6 +8,7 @@ EventEmitter = require './core/events'
 
 class AudioDevice extends EventEmitter
     constructor: (@sampleRate, @channels) ->
+        super()
         @playing = false
         @currentTime = 0
         @_lastTime = 0

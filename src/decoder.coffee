@@ -6,6 +6,7 @@ UnderflowError = require './core/underflow'
 
 class Decoder extends EventEmitter
     constructor: (@demuxer, @format) ->
+        super()
         list = new BufferList
         @stream = new Stream(list)
         @bitstream = new Bitstream(@stream)

@@ -15,6 +15,7 @@ Decoder      = require './decoder'
 
 class Asset extends EventEmitter
     constructor: (@source) ->
+        super()
         @buffered = 0
         @duration = null
         @format = null

@@ -4,6 +4,7 @@ fs = require 'fs'
 
 class FileSource extends EventEmitter
     constructor: (@filename) ->
+        super()
         @stream = null
         @loaded = 0
         @size = null

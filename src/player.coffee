@@ -15,6 +15,7 @@ AudioDevice = require './device'
 
 class Player extends EventEmitter
     constructor: (@asset) ->
+        super()
         @playing = false
         @buffered = 0
         @currentTime = 0
